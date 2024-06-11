@@ -954,7 +954,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_meter_entries_api_v1_metering_meterentry_post**
-> MeterEntrySchema create_meter_entries_api_v1_metering_meterentry_post(meter_entry_schema)
+> List[MeterEntrySchema] create_meter_entries_api_v1_metering_meterentry_post(meter_entry_schema)
 
 Create Meter Entries
 
@@ -1012,7 +1012,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeterEntrySchema**](MeterEntrySchema.md)
+[**List[MeterEntrySchema]**](MeterEntrySchema.md)
 
 ### Authorization
 
