@@ -2,6 +2,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: Publish
+    env:
+      PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
@@ -13,4 +16,8 @@ jobs:
           python setup.py sdist
       - name: Publish to PyPI
         run: |
+          echo "[pypi]
+          username = __token__
+          password = $PYPI_TOKEN" > ~/.pypirc
+
           python -m twine upload --repository pypi dist/*
