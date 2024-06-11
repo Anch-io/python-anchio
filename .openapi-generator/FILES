@@ -59,6 +59,7 @@ anchio/models/limit_offset_page_tool_category_schema.py
 anchio/models/limit_offset_page_tool_schema.py
 anchio/models/limit_offset_page_transaction_schema.py
 anchio/models/limit_offset_page_user_license_schema.py
+anchio/models/meter_entry_schema.py
 anchio/models/metered_alert_schema.py
 anchio/models/metered_service_schema.py
 anchio/models/metering_service_source_enum.py
@@ -161,6 +162,7 @@ docs/LimitOffsetPageToolCategorySchema.md
 docs/LimitOffsetPageToolSchema.md
 docs/LimitOffsetPageTransactionSchema.md
 docs/LimitOffsetPageUserLicenseSchema.md
+docs/MeterEntrySchema.md
 docs/MeteredAlertSchema.md
 docs/MeteredServiceSchema.md
 docs/MeteringServiceSourceEnum.md
@@ -219,4 +221,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_meter_entry_schema.py
 tox.ini

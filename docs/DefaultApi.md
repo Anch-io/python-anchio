@@ -14,6 +14,7 @@ Method | HTTP request | Description
 [**create_channel_api_v1_notifications_channels_post**](DefaultApi.md#create_channel_api_v1_notifications_channels_post) | **POST** /api/v1/notifications/channels | Create Channel
 [**create_checkout_session_api_v1_auth_subscription_create_checkout_session_post**](DefaultApi.md#create_checkout_session_api_v1_auth_subscription_create_checkout_session_post) | **POST** /api/v1/auth/subscription/create-checkout-session | Create Checkout Session
 [**create_key_api_v1_auth_key_post**](DefaultApi.md#create_key_api_v1_auth_key_post) | **POST** /api/v1/auth/key | Create Key
+[**create_meter_entries_api_v1_metering_meterentry_post**](DefaultApi.md#create_meter_entries_api_v1_metering_meterentry_post) | **POST** /api/v1/metering/meterentry | Create Meter Entries
 [**create_metered_service_api_v1_metering_services_post**](DefaultApi.md#create_metered_service_api_v1_metering_services_post) | **POST** /api/v1/metering/services | Create Metered Service
 [**delete_alert_api_v1_metering_alerts_id_delete**](DefaultApi.md#delete_alert_api_v1_metering_alerts_id_delete) | **DELETE** /api/v1/metering/alerts/{id} | Delete Alert
 [**delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete**](DefaultApi.md#delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete) | **DELETE** /api/v1/auth/integrations/api-key/{key_id} | Delete Api Key Integration
@@ -933,6 +934,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**KeySchema**](KeySchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_meter_entries_api_v1_metering_meterentry_post**
+> MeterEntrySchema create_meter_entries_api_v1_metering_meterentry_post(meter_entry_schema)
+
+Create Meter Entries
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.meter_entry_schema import MeterEntrySchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    meter_entry_schema = [anchio.MeterEntrySchema()] # List[MeterEntrySchema] | 
+
+    try:
+        # Create Meter Entries
+        api_response = api_instance.create_meter_entries_api_v1_metering_meterentry_post(meter_entry_schema)
+        print("The response of DefaultApi->create_meter_entries_api_v1_metering_meterentry_post:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->create_meter_entries_api_v1_metering_meterentry_post: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **meter_entry_schema** | [**List[MeterEntrySchema]**](MeterEntrySchema.md)|  | 
+
+### Return type
+
+[**MeterEntrySchema**](MeterEntrySchema.md)
 
 ### Authorization
 

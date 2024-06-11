@@ -105,6 +105,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**create_channel_api_v1_notifications_channels_post**](docs/DefaultApi.md#create_channel_api_v1_notifications_channels_post) | **POST** /api/v1/notifications/channels | Create Channel
 *DefaultApi* | [**create_checkout_session_api_v1_auth_subscription_create_checkout_session_post**](docs/DefaultApi.md#create_checkout_session_api_v1_auth_subscription_create_checkout_session_post) | **POST** /api/v1/auth/subscription/create-checkout-session | Create Checkout Session
 *DefaultApi* | [**create_key_api_v1_auth_key_post**](docs/DefaultApi.md#create_key_api_v1_auth_key_post) | **POST** /api/v1/auth/key | Create Key
+*DefaultApi* | [**create_meter_entries_api_v1_metering_meterentry_post**](docs/DefaultApi.md#create_meter_entries_api_v1_metering_meterentry_post) | **POST** /api/v1/metering/meterentry | Create Meter Entries
 *DefaultApi* | [**create_metered_service_api_v1_metering_services_post**](docs/DefaultApi.md#create_metered_service_api_v1_metering_services_post) | **POST** /api/v1/metering/services | Create Metered Service
 *DefaultApi* | [**delete_alert_api_v1_metering_alerts_id_delete**](docs/DefaultApi.md#delete_alert_api_v1_metering_alerts_id_delete) | **DELETE** /api/v1/metering/alerts/{id} | Delete Alert
 *DefaultApi* | [**delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete**](docs/DefaultApi.md#delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete) | **DELETE** /api/v1/auth/integrations/api-key/{key_id} | Delete Api Key Integration
@@ -225,6 +226,7 @@ Class | Method | HTTP request | Description
  - [LimitOffsetPageToolSchema](docs/LimitOffsetPageToolSchema.md)
  - [LimitOffsetPageTransactionSchema](docs/LimitOffsetPageTransactionSchema.md)
  - [LimitOffsetPageUserLicenseSchema](docs/LimitOffsetPageUserLicenseSchema.md)
+ - [MeterEntrySchema](docs/MeterEntrySchema.md)
  - [MeteredAlertSchema](docs/MeteredAlertSchema.md)
  - [MeteredServiceSchema](docs/MeteredServiceSchema.md)
  - [MeteringServiceSourceEnum](docs/MeteringServiceSourceEnum.md)

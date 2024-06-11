@@ -80,6 +80,7 @@ from anchio.models.limit_offset_page_tool_category_schema import LimitOffsetPage
 from anchio.models.limit_offset_page_tool_schema import LimitOffsetPageToolSchema
 from anchio.models.limit_offset_page_transaction_schema import LimitOffsetPageTransactionSchema
 from anchio.models.limit_offset_page_user_license_schema import LimitOffsetPageUserLicenseSchema
+from anchio.models.meter_entry_schema import MeterEntrySchema
 from anchio.models.metered_alert_schema import MeteredAlertSchema
 from anchio.models.metered_service_schema import MeteredServiceSchema
 from anchio.models.metering_service_source_enum import MeteringServiceSourceEnum
