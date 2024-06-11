@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**create_channel_api_v1_notifications_channels_post**](DefaultApi.md#create_channel_api_v1_notifications_channels_post) | **POST** /api/v1/notifications/channels | Create Channel
 [**create_checkout_session_api_v1_auth_subscription_create_checkout_session_post**](DefaultApi.md#create_checkout_session_api_v1_auth_subscription_create_checkout_session_post) | **POST** /api/v1/auth/subscription/create-checkout-session | Create Checkout Session
 [**create_key_api_v1_auth_key_post**](DefaultApi.md#create_key_api_v1_auth_key_post) | **POST** /api/v1/auth/key | Create Key
-[**create_meter_entries_api_v1_metering_meterentry_post**](DefaultApi.md#create_meter_entries_api_v1_metering_meterentry_post) | **POST** /api/v1/metering/meterentry | Create Meter Entries
+[**create_meter_entries_api_v1_metering_meter_entry_post**](DefaultApi.md#create_meter_entries_api_v1_metering_meter_entry_post) | **POST** /api/v1/metering/meter-entry | Create Meter Entries
 [**create_metered_service_api_v1_metering_services_post**](DefaultApi.md#create_metered_service_api_v1_metering_services_post) | **POST** /api/v1/metering/services | Create Metered Service
 [**delete_alert_api_v1_metering_alerts_id_delete**](DefaultApi.md#delete_alert_api_v1_metering_alerts_id_delete) | **DELETE** /api/v1/metering/alerts/{id} | Delete Alert
 [**delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete**](DefaultApi.md#delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete) | **DELETE** /api/v1/auth/integrations/api-key/{key_id} | Delete Api Key Integration
@@ -953,8 +953,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **create_meter_entries_api_v1_metering_meterentry_post**
-> List[MeterEntrySchema] create_meter_entries_api_v1_metering_meterentry_post(meter_entry_schema)
+# **create_meter_entries_api_v1_metering_meter_entry_post**
+> List[MeterEntrySchema] create_meter_entries_api_v1_metering_meter_entry_post(meter_entry_schema)
 
 Create Meter Entries
 
@@ -994,11 +994,11 @@ with anchio.ApiClient(configuration) as api_client:
 
     try:
         # Create Meter Entries
-        api_response = api_instance.create_meter_entries_api_v1_metering_meterentry_post(meter_entry_schema)
-        print("The response of DefaultApi->create_meter_entries_api_v1_metering_meterentry_post:\n")
+        api_response = api_instance.create_meter_entries_api_v1_metering_meter_entry_post(meter_entry_schema)
+        print("The response of DefaultApi->create_meter_entries_api_v1_metering_meter_entry_post:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DefaultApi->create_meter_entries_api_v1_metering_meterentry_post: %s\n" % e)
+        print("Exception when calling DefaultApi->create_meter_entries_api_v1_metering_meter_entry_post: %s\n" % e)
 ```
 
 

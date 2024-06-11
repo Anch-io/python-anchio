@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **created_on** | **str** |  | [optional] 
 **updated_on** | **str** |  | [optional] 
 **id** | **str** |  | 
-**group** | **str** |  | 
+**group** | **str** |  | [optional] 
 **service** | **str** |  | 
 **value** | **int** |  | 
 **start** | **datetime** |  | 
