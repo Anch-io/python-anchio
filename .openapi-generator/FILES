@@ -66,7 +66,6 @@ anchio/models/metered_alert_schema.py
 anchio/models/metered_service_metric_schema.py
 anchio/models/metered_service_schema.py
 anchio/models/metering_service_source_enum.py
-anchio/models/metric.py
 anchio/models/notification_channel_enum.py
 anchio/models/notification_channel_schema.py
 anchio/models/notification_filter_schema_notificationfilterschema_enum.py
@@ -173,7 +172,6 @@ docs/MeteredAlertSchema.md
 docs/MeteredServiceMetricSchema.md
 docs/MeteredServiceSchema.md
 docs/MeteringServiceSourceEnum.md
-docs/Metric.md
 docs/NotificationChannelEnum.md
 docs/NotificationChannelSchema.md
 docs/NotificationFilterSchemaNotificationfilterschemaEnum.md
@@ -229,8 +227,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_limit_offset_page_metered_service_metric_schema.py
-test/test_meter_value_type_enum.py
-test/test_metered_service_metric_schema.py
-test/test_metric.py
 tox.ini

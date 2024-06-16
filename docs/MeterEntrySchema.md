@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **updated_on** | **str** |  | [optional] 
 **id** | **str** |  | 
 **group** | **str** |  | [optional] 
-**metric** | [**Metric**](Metric.md) |  | 
+**metric** | **str** |  | 
 **service** | **str** |  | 
 **value** | **int** |  | 
 **value_type** | [**MeterValueTypeEnum**](MeterValueTypeEnum.md) |  | [optional] 
