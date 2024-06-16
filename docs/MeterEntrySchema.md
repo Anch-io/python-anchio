@@ -9,8 +9,11 @@ Name | Type | Description | Notes
 **updated_on** | **str** |  | [optional] 
 **id** | **str** |  | 
 **group** | **str** |  | [optional] 
+**metric** | [**Metric**](Metric.md) |  | 
 **service** | **str** |  | 
 **value** | **int** |  | 
+**value_type** | [**MeterValueTypeEnum**](MeterValueTypeEnum.md) |  | [optional] 
+**currency_iso** | **str** |  | [optional] 
 **start** | **datetime** |  | 
 **end** | **datetime** |  | 
 

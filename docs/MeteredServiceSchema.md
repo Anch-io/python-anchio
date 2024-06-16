@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **id** | **str** |  | 
 **name** | **str** |  | 
 **description** | **str** |  | 
-**tool_contract** | **str** |  | 
+**tool_contract** | **str** |  | [optional] 
 **source** | [**MeteringServiceSourceEnum**](MeteringServiceSourceEnum.md) |  | 
 **seven_day_usage** | **int** |  | [optional] 
 **thirty_day_usage** | **int** |  | [optional] 

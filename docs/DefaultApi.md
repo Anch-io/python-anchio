@@ -47,6 +47,7 @@ Method | HTTP request | Description
 [**list_company_roles_api_v1_auth_company_roles_get**](DefaultApi.md#list_company_roles_api_v1_auth_company_roles_get) | **GET** /api/v1/auth/company/roles | List Company Roles
 [**list_keys_api_v1_auth_key_get**](DefaultApi.md#list_keys_api_v1_auth_key_get) | **GET** /api/v1/auth/key | List Keys
 [**list_licenses_api_v1_auth_licenses_get**](DefaultApi.md#list_licenses_api_v1_auth_licenses_get) | **GET** /api/v1/auth/licenses | List Licenses
+[**list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get**](DefaultApi.md#list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get) | **GET** /api/v1/metering/services/{service_id}/metrics | List Metered Service Metrics
 [**list_metered_services_api_v1_metering_services_get**](DefaultApi.md#list_metered_services_api_v1_metering_services_get) | **GET** /api/v1/metering/services | List Metered Services
 [**list_notification_channels_api_v1_notifications_channels_get**](DefaultApi.md#list_notification_channels_api_v1_notifications_channels_get) | **GET** /api/v1/notifications/channels | List Notification Channels
 [**list_notifications_api_v1_notifications_get**](DefaultApi.md#list_notifications_api_v1_notifications_get) | **GET** /api/v1/notifications/ | List Notifications
@@ -3702,6 +3703,89 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**LimitOffsetPageUserLicenseSchema**](LimitOffsetPageUserLicenseSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get**
+> LimitOffsetPageMeteredServiceMetricSchema list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get(service_id, limit=limit, offset=offset)
+
+List Metered Service Metrics
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.limit_offset_page_metered_service_metric_schema import LimitOffsetPageMeteredServiceMetricSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    service_id = 'service_id_example' # str | 
+    limit = 50 # int | Page size limit (optional) (default to 50)
+    offset = 0 # int | Page offset (optional) (default to 0)
+
+    try:
+        # List Metered Service Metrics
+        api_response = api_instance.list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get(service_id, limit=limit, offset=offset)
+        print("The response of DefaultApi->list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service_id** | **str**|  | 
+ **limit** | **int**| Page size limit | [optional] [default to 50]
+ **offset** | **int**| Page offset | [optional] [default to 0]
+
+### Return type
+
+[**LimitOffsetPageMeteredServiceMetricSchema**](LimitOffsetPageMeteredServiceMetricSchema.md)
 
 ### Authorization
 
