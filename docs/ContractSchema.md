@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **updated_on** | **str** |  | [optional] 
 **department_ids** | **List[str]** |  | 
 **contract_tools** | [**List[ToolContractSchema]**](ToolContractSchema.md) |  | 
-**name** | **str** | name | [optional] [default to '']
+**name** | **str** | name | [optional] 
 **start** | **str** |  | 
 **end** | **str** |  | [optional] 
 **signing_date** | **str** |  | [optional] 
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **notes** | **str** |  | [optional] [default to '']
 **agreement_link** | **str** |  | [optional] [default to '']
 **renewal_policy** | [**RenewalPolicyEnum**](RenewalPolicyEnum.md) |  | 
-**contract_signer** | [**EmployeeSchema**](EmployeeSchema.md) |  | [optional] 
+**contract_signer** | [**EmployeeSchemaOutput**](EmployeeSchemaOutput.md) |  | [optional] 
 **user_count** | **int** |  | [optional] [default to 0]
 
 ## Example

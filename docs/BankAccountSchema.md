@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **connected_tools** | **int** |  | [optional] [default to 0]
 **last_sync_date** | **str** |  | [optional] 
 **institution** | **str** |  | 
-**logo** | **str** |  | 
+**logo** | **str** |  | [optional] 
 **oauth_token** | **str** |  | [optional] 
 
 ## Example

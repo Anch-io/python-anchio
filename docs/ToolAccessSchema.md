@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **created_on** | **datetime** | created_on | [optional] 
 **updated_on** | **datetime** | updated_on | [optional] 
 **tool** | [**ToolSchema**](ToolSchema.md) |  | 
-**employee** | [**EmployeeSchema**](EmployeeSchema.md) |  | 
-**role** | **str** |  | 
+**employee** | [**EmployeeSchemaOutput**](EmployeeSchemaOutput.md) |  | 
+**role** | [**ToolAccessSchemaRoleEnum**](ToolAccessSchemaRoleEnum.md) |  | [optional] 
 **access_start** | **str** |  | 
 **access_end** | **str** |  | [optional] 
 **justification** | **str** |  | 

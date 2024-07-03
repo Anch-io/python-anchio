@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **updated_on** | **str** |  | [optional] 
 **id** | **str** |  | 
 **name** | **str** |  | 
-**service** | **str** |  | 
+**metric** | **str** |  | 
 **threshold** | **float** |  | 
 **period** | **str** |  | 
 **notification_channels** | **List[str]** |  | 

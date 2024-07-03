@@ -13,14 +13,18 @@ Method | HTTP request | Description
 [**create_api_key_integration_api_v1_auth_integrations_api_key_post**](DefaultApi.md#create_api_key_integration_api_v1_auth_integrations_api_key_post) | **POST** /api/v1/auth/integrations/api-key/ | Create Api Key Integration
 [**create_channel_api_v1_notifications_channels_post**](DefaultApi.md#create_channel_api_v1_notifications_channels_post) | **POST** /api/v1/notifications/channels | Create Channel
 [**create_checkout_session_api_v1_auth_subscription_create_checkout_session_post**](DefaultApi.md#create_checkout_session_api_v1_auth_subscription_create_checkout_session_post) | **POST** /api/v1/auth/subscription/create-checkout-session | Create Checkout Session
+[**create_employee_roles_api_v1_corp_employee_roles_post**](DefaultApi.md#create_employee_roles_api_v1_corp_employee_roles_post) | **POST** /api/v1/corp/employee-roles | Create Employee Roles
 [**create_key_api_v1_auth_key_post**](DefaultApi.md#create_key_api_v1_auth_key_post) | **POST** /api/v1/auth/key | Create Key
 [**create_meter_entries_api_v1_metering_meter_entry_post**](DefaultApi.md#create_meter_entries_api_v1_metering_meter_entry_post) | **POST** /api/v1/metering/meter-entry | Create Meter Entries
 [**create_metered_service_api_v1_metering_services_post**](DefaultApi.md#create_metered_service_api_v1_metering_services_post) | **POST** /api/v1/metering/services | Create Metered Service
+[**create_role_tools_api_v1_corp_employee_roles_role_tools_post**](DefaultApi.md#create_role_tools_api_v1_corp_employee_roles_role_tools_post) | **POST** /api/v1/corp/employee-roles/role-tools | Create Role Tools
 [**delete_alert_api_v1_metering_alerts_id_delete**](DefaultApi.md#delete_alert_api_v1_metering_alerts_id_delete) | **DELETE** /api/v1/metering/alerts/{id} | Delete Alert
 [**delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete**](DefaultApi.md#delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete) | **DELETE** /api/v1/auth/integrations/api-key/{key_id} | Delete Api Key Integration
 [**delete_channel_api_v1_notifications_channels_id_delete**](DefaultApi.md#delete_channel_api_v1_notifications_channels_id_delete) | **DELETE** /api/v1/notifications/channels/{id} | Delete Channel
+[**delete_employee_roles_api_v1_corp_employee_roles_id_delete**](DefaultApi.md#delete_employee_roles_api_v1_corp_employee_roles_id_delete) | **DELETE** /api/v1/corp/employee-roles/{id} | Delete Employee Roles
 [**delete_metered_service_api_v1_metering_services_id_delete**](DefaultApi.md#delete_metered_service_api_v1_metering_services_id_delete) | **DELETE** /api/v1/metering/services/{id} | Delete Metered Service
 [**delete_oauth_token_api_v1_auth_integrations_oauth_id_delete**](DefaultApi.md#delete_oauth_token_api_v1_auth_integrations_oauth_id_delete) | **DELETE** /api/v1/auth/integrations/oauth/{id} | Delete Oauth Token
+[**delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete**](DefaultApi.md#delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete) | **DELETE** /api/v1/corp/employee-roles/role-tools/{id} | Delete Role Tools
 [**destroy_key_api_v1_auth_key_id_delete**](DefaultApi.md#destroy_key_api_v1_auth_key_id_delete) | **DELETE** /api/v1/auth/key/{id} | Destroy Key
 [**exchange_plaid_token_api_v1_auth_plaid_exchange_token_get**](DefaultApi.md#exchange_plaid_token_api_v1_auth_plaid_exchange_token_get) | **GET** /api/v1/auth/plaid/exchange-token | Exchange Plaid Token
 [**feedback_api_v1_auth_feedback_post**](DefaultApi.md#feedback_api_v1_auth_feedback_post) | **POST** /api/v1/auth/feedback | Feedback
@@ -45,6 +49,7 @@ Method | HTTP request | Description
 [**list_api_key_integrations_api_v1_auth_integrations_api_key_get**](DefaultApi.md#list_api_key_integrations_api_v1_auth_integrations_api_key_get) | **GET** /api/v1/auth/integrations/api-key/ | List Api Key Integrations
 [**list_bank_accounts_api_v1_corp_bank_accounts_get**](DefaultApi.md#list_bank_accounts_api_v1_corp_bank_accounts_get) | **GET** /api/v1/corp/bank-accounts | List Bank Accounts
 [**list_company_roles_api_v1_auth_company_roles_get**](DefaultApi.md#list_company_roles_api_v1_auth_company_roles_get) | **GET** /api/v1/auth/company/roles | List Company Roles
+[**list_employee_roles_api_v1_corp_employee_roles_get**](DefaultApi.md#list_employee_roles_api_v1_corp_employee_roles_get) | **GET** /api/v1/corp/employee-roles | List Employee Roles
 [**list_keys_api_v1_auth_key_get**](DefaultApi.md#list_keys_api_v1_auth_key_get) | **GET** /api/v1/auth/key | List Keys
 [**list_licenses_api_v1_auth_licenses_get**](DefaultApi.md#list_licenses_api_v1_auth_licenses_get) | **GET** /api/v1/auth/licenses | List Licenses
 [**list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get**](DefaultApi.md#list_metered_service_metrics_api_v1_metering_services_service_id_metrics_get) | **GET** /api/v1/metering/services/{service_id}/metrics | List Metered Service Metrics
@@ -52,16 +57,19 @@ Method | HTTP request | Description
 [**list_notification_channels_api_v1_notifications_channels_get**](DefaultApi.md#list_notification_channels_api_v1_notifications_channels_get) | **GET** /api/v1/notifications/channels | List Notification Channels
 [**list_notifications_api_v1_notifications_get**](DefaultApi.md#list_notifications_api_v1_notifications_get) | **GET** /api/v1/notifications/ | List Notifications
 [**list_oauth_integrations_api_v1_auth_integrations_oauth_get**](DefaultApi.md#list_oauth_integrations_api_v1_auth_integrations_oauth_get) | **GET** /api/v1/auth/integrations/oauth/ | List Oauth Integrations
+[**list_role_tools_api_v1_corp_employee_roles_role_tools_get**](DefaultApi.md#list_role_tools_api_v1_corp_employee_roles_role_tools_get) | **GET** /api/v1/corp/employee-roles/role-tools | List Role Tools
 [**list_slack_channels_api_v1_integrations_slack_channels_get**](DefaultApi.md#list_slack_channels_api_v1_integrations_slack_channels_get) | **GET** /api/v1/integrations/slack/channels | List Slack Channels
 [**list_transactions_api_v1_corp_transactions_get**](DefaultApi.md#list_transactions_api_v1_corp_transactions_get) | **GET** /api/v1/corp/transactions | List Transactions
 [**plaid_create_token_api_v1_auth_plaid_create_token_get**](DefaultApi.md#plaid_create_token_api_v1_auth_plaid_create_token_get) | **GET** /api/v1/auth/plaid/create-token | Plaid Create Token
 [**post_access_request_api_v1_corp_accesses_post**](DefaultApi.md#post_access_request_api_v1_corp_accesses_post) | **POST** /api/v1/corp/accesses | Post Access Request
 [**post_employee_access_request_api_v1_corp_accesses_employee_post**](DefaultApi.md#post_employee_access_request_api_v1_corp_accesses_employee_post) | **POST** /api/v1/corp/accesses/employee | Post Employee Access Request
 [**post_oauth_credentials_api_v1_auth_integrations_oauth_provider_post**](DefaultApi.md#post_oauth_credentials_api_v1_auth_integrations_oauth_provider_post) | **POST** /api/v1/auth/integrations/oauth/{provider} | Post Oauth Credentials
+[**public_post_access_request_api_v1_corp_accesses_public_slug_post**](DefaultApi.md#public_post_access_request_api_v1_corp_accesses_public_slug_post) | **POST** /api/v1/corp/accesses/public/{slug} | Public Post Access Request
 [**refresh_token_api_v1_auth_refresh_token_post**](DefaultApi.md#refresh_token_api_v1_auth_refresh_token_post) | **POST** /api/v1/auth/refresh-token/ | Refresh Token
 [**resend_verification_email_api_v1_auth_resend_verification_email_get**](DefaultApi.md#resend_verification_email_api_v1_auth_resend_verification_email_get) | **GET** /api/v1/auth/resend-verification-email | Resend Verification Email
 [**reset_password_api_v1_auth_reset_password_post**](DefaultApi.md#reset_password_api_v1_auth_reset_password_post) | **POST** /api/v1/auth/reset-password | Reset Password
 [**retrieve_alert_api_v1_metering_alerts_id_get**](DefaultApi.md#retrieve_alert_api_v1_metering_alerts_id_get) | **GET** /api/v1/metering/alerts/{id} | Retrieve Alert
+[**retrieve_employee_roles_api_v1_corp_employee_roles_id_get**](DefaultApi.md#retrieve_employee_roles_api_v1_corp_employee_roles_id_get) | **GET** /api/v1/corp/employee-roles/{id} | Retrieve Employee Roles
 [**retrieve_link_token_api_v1_auth_plaid_get_link_token_get**](DefaultApi.md#retrieve_link_token_api_v1_auth_plaid_get_link_token_get) | **GET** /api/v1/auth/plaid/get-link-token | Retrieve Link Token
 [**retrieve_metered_service_api_v1_metering_services_id_get**](DefaultApi.md#retrieve_metered_service_api_v1_metering_services_id_get) | **GET** /api/v1/metering/services/{id} | Retrieve Metered Service
 [**sign_in_api_v1_auth_sign_in_post**](DefaultApi.md#sign_in_api_v1_auth_sign_in_post) | **POST** /api/v1/auth/sign-in/ | Sign In
@@ -73,8 +81,10 @@ Method | HTTP request | Description
 [**update_channel_api_v1_notifications_channels_id_put**](DefaultApi.md#update_channel_api_v1_notifications_channels_id_put) | **PUT** /api/v1/notifications/channels/{id} | Update Channel
 [**update_company_api_v1_auth_company_update_put**](DefaultApi.md#update_company_api_v1_auth_company_update_put) | **PUT** /api/v1/auth/company/update | Update Company
 [**update_employee_api_v1_corp_employees_employee_id_put**](DefaultApi.md#update_employee_api_v1_corp_employees_employee_id_put) | **PUT** /api/v1/corp/employees/{employeeId} | Update Employee
+[**update_employee_roles_api_v1_corp_employee_roles_id_put**](DefaultApi.md#update_employee_roles_api_v1_corp_employee_roles_id_put) | **PUT** /api/v1/corp/employee-roles/{id} | Update Employee Roles
 [**update_metered_service_api_v1_metering_services_id_put**](DefaultApi.md#update_metered_service_api_v1_metering_services_id_put) | **PUT** /api/v1/metering/services/{id} | Update Metered Service
 [**update_notification_api_v1_notifications_id_put**](DefaultApi.md#update_notification_api_v1_notifications_id_put) | **PUT** /api/v1/notifications/{id} | Update Notification
+[**update_role_tools_api_v1_corp_employee_roles_role_tools_id_put**](DefaultApi.md#update_role_tools_api_v1_corp_employee_roles_role_tools_id_put) | **PUT** /api/v1/corp/employee-roles/role-tools/{id} | Update Role Tools
 [**update_user_api_v1_auth_me_update_put**](DefaultApi.md#update_user_api_v1_auth_me_update_put) | **PUT** /api/v1/auth/me/update/ | Update User
 [**update_user_license_schema_api_v1_auth_license_update_put**](DefaultApi.md#update_user_license_schema_api_v1_auth_license_update_put) | **PUT** /api/v1/auth/license/update | Update User License Schema
 [**upload_company_logo_api_v1_auth_company_logo_post**](DefaultApi.md#upload_company_logo_api_v1_auth_company_logo_post) | **POST** /api/v1/auth/company/logo | Upload Company Logo
@@ -319,7 +329,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **bulk_update_employees_api_v1_corp_employees_bulk_update_post**
-> List[EmployeeSchema] bulk_update_employees_api_v1_corp_employees_bulk_update_post(update_employee_schema)
+> List[EmployeeSchemaOutput] bulk_update_employees_api_v1_corp_employees_bulk_update_post(employee_schema_input)
 
 Bulk Update Employees
 
@@ -331,8 +341,8 @@ Bulk Update Employees
 import time
 import os
 import anchio
-from anchio.models.employee_schema import EmployeeSchema
-from anchio.models.update_employee_schema import UpdateEmployeeSchema
+from anchio.models.employee_schema_input import EmployeeSchemaInput
+from anchio.models.employee_schema_output import EmployeeSchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -356,11 +366,11 @@ configuration = anchio.Configuration(
 with anchio.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = anchio.DefaultApi(api_client)
-    update_employee_schema = [anchio.UpdateEmployeeSchema()] # List[UpdateEmployeeSchema] | 
+    employee_schema_input = [anchio.EmployeeSchemaInput()] # List[EmployeeSchemaInput] | 
 
     try:
         # Bulk Update Employees
-        api_response = api_instance.bulk_update_employees_api_v1_corp_employees_bulk_update_post(update_employee_schema)
+        api_response = api_instance.bulk_update_employees_api_v1_corp_employees_bulk_update_post(employee_schema_input)
         print("The response of DefaultApi->bulk_update_employees_api_v1_corp_employees_bulk_update_post:\n")
         pprint(api_response)
     except Exception as e:
@@ -374,11 +384,11 @@ with anchio.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **update_employee_schema** | [**List[UpdateEmployeeSchema]**](UpdateEmployeeSchema.md)|  | 
+ **employee_schema_input** | [**List[EmployeeSchemaInput]**](EmployeeSchemaInput.md)|  | 
 
 ### Return type
 
-[**List[EmployeeSchema]**](EmployeeSchema.md)
+[**List[EmployeeSchemaOutput]**](EmployeeSchemaOutput.md)
 
 ### Authorization
 
@@ -637,7 +647,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_api_key_integration_api_v1_auth_integrations_api_key_post**
-> APIKeySchema create_api_key_integration_api_v1_auth_integrations_api_key_post(create_api_key_schema)
+> APIKeySchemaOutput create_api_key_integration_api_v1_auth_integrations_api_key_post(api_key_schema_input)
 
 Create Api Key Integration
 
@@ -649,8 +659,8 @@ Create Api Key Integration
 import time
 import os
 import anchio
-from anchio.models.api_key_schema import APIKeySchema
-from anchio.models.create_api_key_schema import CreateAPIKeySchema
+from anchio.models.api_key_schema_input import APIKeySchemaInput
+from anchio.models.api_key_schema_output import APIKeySchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -674,11 +684,11 @@ configuration = anchio.Configuration(
 with anchio.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = anchio.DefaultApi(api_client)
-    create_api_key_schema = anchio.CreateAPIKeySchema() # CreateAPIKeySchema | 
+    api_key_schema_input = anchio.APIKeySchemaInput() # APIKeySchemaInput | 
 
     try:
         # Create Api Key Integration
-        api_response = api_instance.create_api_key_integration_api_v1_auth_integrations_api_key_post(create_api_key_schema)
+        api_response = api_instance.create_api_key_integration_api_v1_auth_integrations_api_key_post(api_key_schema_input)
         print("The response of DefaultApi->create_api_key_integration_api_v1_auth_integrations_api_key_post:\n")
         pprint(api_response)
     except Exception as e:
@@ -692,11 +702,11 @@ with anchio.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_api_key_schema** | [**CreateAPIKeySchema**](CreateAPIKeySchema.md)|  | 
+ **api_key_schema_input** | [**APIKeySchemaInput**](APIKeySchemaInput.md)|  | 
 
 ### Return type
 
-[**APIKeySchema**](APIKeySchema.md)
+[**APIKeySchemaOutput**](APIKeySchemaOutput.md)
 
 ### Authorization
 
@@ -856,6 +866,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CheckoutSessionSchema**](CheckoutSessionSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_employee_roles_api_v1_corp_employee_roles_post**
+> EmployeeRoleSchema create_employee_roles_api_v1_corp_employee_roles_post(employee_role_schema)
+
+Create Employee Roles
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_schema import EmployeeRoleSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    employee_role_schema = anchio.EmployeeRoleSchema() # EmployeeRoleSchema | 
+
+    try:
+        # Create Employee Roles
+        api_response = api_instance.create_employee_roles_api_v1_corp_employee_roles_post(employee_role_schema)
+        print("The response of DefaultApi->create_employee_roles_api_v1_corp_employee_roles_post:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->create_employee_roles_api_v1_corp_employee_roles_post: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_role_schema** | [**EmployeeRoleSchema**](EmployeeRoleSchema.md)|  | 
+
+### Return type
+
+[**EmployeeRoleSchema**](EmployeeRoleSchema.md)
 
 ### Authorization
 
@@ -1112,6 +1201,85 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **create_role_tools_api_v1_corp_employee_roles_role_tools_post**
+> EmployeeRoleToolSchema create_role_tools_api_v1_corp_employee_roles_role_tools_post(employee_role_tool_schema)
+
+Create Role Tools
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_tool_schema import EmployeeRoleToolSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    employee_role_tool_schema = anchio.EmployeeRoleToolSchema() # EmployeeRoleToolSchema | 
+
+    try:
+        # Create Role Tools
+        api_response = api_instance.create_role_tools_api_v1_corp_employee_roles_role_tools_post(employee_role_tool_schema)
+        print("The response of DefaultApi->create_role_tools_api_v1_corp_employee_roles_role_tools_post:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->create_role_tools_api_v1_corp_employee_roles_role_tools_post: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_role_tool_schema** | [**EmployeeRoleToolSchema**](EmployeeRoleToolSchema.md)|  | 
+
+### Return type
+
+[**EmployeeRoleToolSchema**](EmployeeRoleToolSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **delete_alert_api_v1_metering_alerts_id_delete**
 > MeteredAlertSchema delete_alert_api_v1_metering_alerts_id_delete(id)
 
@@ -1192,7 +1360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete**
-> APIKeySchema delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete(key_id)
+> APIKeySchemaOutput delete_api_key_integration_api_v1_auth_integrations_api_key_key_id_delete(key_id)
 
 Delete Api Key Integration
 
@@ -1204,7 +1372,7 @@ Delete Api Key Integration
 import time
 import os
 import anchio
-from anchio.models.api_key_schema import APIKeySchema
+from anchio.models.api_key_schema_output import APIKeySchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -1250,7 +1418,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**APIKeySchema**](APIKeySchema.md)
+[**APIKeySchemaOutput**](APIKeySchemaOutput.md)
 
 ### Authorization
 
@@ -1330,6 +1498,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**NotificationChannelSchema**](NotificationChannelSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_employee_roles_api_v1_corp_employee_roles_id_delete**
+> EmployeeRoleSchema delete_employee_roles_api_v1_corp_employee_roles_id_delete(id)
+
+Delete Employee Roles
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_schema import EmployeeRoleSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    id = 'id_example' # str | 
+
+    try:
+        # Delete Employee Roles
+        api_response = api_instance.delete_employee_roles_api_v1_corp_employee_roles_id_delete(id)
+        print("The response of DefaultApi->delete_employee_roles_api_v1_corp_employee_roles_id_delete:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->delete_employee_roles_api_v1_corp_employee_roles_id_delete: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
+
+[**EmployeeRoleSchema**](EmployeeRoleSchema.md)
 
 ### Authorization
 
@@ -1488,6 +1735,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TokenSchema**](TokenSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete**
+> EmployeeRoleToolSchema delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete(id)
+
+Delete Role Tools
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_tool_schema import EmployeeRoleToolSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    id = 'id_example' # str | 
+
+    try:
+        # Delete Role Tools
+        api_response = api_instance.delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete(id)
+        print("The response of DefaultApi->delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->delete_role_tools_api_v1_corp_employee_roles_role_tools_id_delete: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
+
+[**EmployeeRoleToolSchema**](EmployeeRoleToolSchema.md)
 
 ### Authorization
 
@@ -1758,8 +2084,9 @@ Get Accesses
 import time
 import os
 import anchio
+from anchio.models.anch_rest_api_utils_filters_tool_access_filter_schema_toolaccessfilterschema_enum1 import AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum1
+from anchio.models.anch_rest_api_utils_filters_tool_access_filter_schema_toolaccessfilterschema_enum2 import AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum2
 from anchio.models.limit_offset_page_tool_access_schema import LimitOffsetPageToolAccessSchema
-from anchio.models.tool_access_filter_schema_toolaccessfilterschema_enum import ToolAccessFilterSchemaToolaccessfilterschemaEnum
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -1787,7 +2114,7 @@ with anchio.ApiClient(configuration) as api_client:
     offset = 0 # int | Page offset (optional) (default to 0)
     tool = 'tool_example' # str |  (optional)
     employee = 'employee_example' # str |  (optional)
-    role = 'role_example' # str |  (optional)
+    role = anchio.AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum1() # AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum1 |  (optional)
     access_start = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
     access_end = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
     tool_in = 'tool_in_example' # str |  (optional)
@@ -1797,7 +2124,7 @@ with anchio.ApiClient(configuration) as api_client:
     access_start_lte = '2013-10-20' # date |  (optional)
     access_end_gte = '2013-10-20' # date |  (optional)
     access_end_lte = '2013-10-20' # date |  (optional)
-    order_in = anchio.ToolAccessFilterSchemaToolaccessfilterschemaEnum() # ToolAccessFilterSchemaToolaccessfilterschemaEnum |  (optional)
+    order_in = anchio.AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum2() # AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum2 |  (optional)
 
     try:
         # Get Accesses
@@ -1819,7 +2146,7 @@ Name | Type | Description  | Notes
  **offset** | **int**| Page offset | [optional] [default to 0]
  **tool** | **str**|  | [optional] 
  **employee** | **str**|  | [optional] 
- **role** | **str**|  | [optional] 
+ **role** | [**AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum1**](.md)|  | [optional] 
  **access_start** | **datetime**|  | [optional] 
  **access_end** | **datetime**|  | [optional] 
  **tool_in** | **str**|  | [optional] 
@@ -1829,7 +2156,7 @@ Name | Type | Description  | Notes
  **access_start_lte** | **date**|  | [optional] 
  **access_end_gte** | **date**|  | [optional] 
  **access_end_lte** | **date**|  | [optional] 
- **order_in** | [**ToolAccessFilterSchemaToolaccessfilterschemaEnum**](.md)|  | [optional] 
+ **order_in** | [**AnchRestApiUtilsFiltersToolAccessFilterSchemaToolaccessfilterschemaEnum2**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1854,7 +2181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_company_api_v1_auth_me_company_company_id_get**
-> CompanySchema get_company_api_v1_auth_me_company_company_id_get(company_id)
+> CompanySchemaOutput get_company_api_v1_auth_me_company_company_id_get(company_id)
 
 Get Company
 
@@ -1866,7 +2193,7 @@ Get Company
 import time
 import os
 import anchio
-from anchio.models.company_schema import CompanySchema
+from anchio.models.company_schema_output import CompanySchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -1912,7 +2239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanySchema**](CompanySchema.md)
+[**CompanySchemaOutput**](CompanySchemaOutput.md)
 
 ### Authorization
 
@@ -2163,7 +2490,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_employee_api_v1_corp_employees_employee_id_get**
-> EmployeeSchema get_employee_api_v1_corp_employees_employee_id_get(employee_id)
+> EmployeeSchemaOutput get_employee_api_v1_corp_employees_employee_id_get(employee_id)
 
 Get Employee
 
@@ -2175,7 +2502,7 @@ Get Employee
 import time
 import os
 import anchio
-from anchio.models.employee_schema import EmployeeSchema
+from anchio.models.employee_schema_output import EmployeeSchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -2221,7 +2548,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeSchema**](EmployeeSchema.md)
+[**EmployeeSchemaOutput**](EmployeeSchemaOutput.md)
 
 ### Authorization
 
@@ -2512,7 +2839,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_my_employee_api_v1_corp_employees_me_get**
-> EmployeeSchema get_my_employee_api_v1_corp_employees_me_get()
+> EmployeeSchemaOutput get_my_employee_api_v1_corp_employees_me_get()
 
 Get My Employee
 
@@ -2524,7 +2851,7 @@ Get My Employee
 import time
 import os
 import anchio
-from anchio.models.employee_schema import EmployeeSchema
+from anchio.models.employee_schema_output import EmployeeSchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -2566,7 +2893,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeSchema**](EmployeeSchema.md)
+[**EmployeeSchemaOutput**](EmployeeSchemaOutput.md)
 
 ### Authorization
 
@@ -3233,7 +3560,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_alerts_api_v1_metering_alerts_get**
-> LimitOffsetPageMeteredAlertSchema list_alerts_api_v1_metering_alerts_get(limit=limit, offset=offset, id=id, service=service)
+> LimitOffsetPageMeteredAlertSchema list_alerts_api_v1_metering_alerts_get(limit=limit, offset=offset, id=id, metric=metric, service=service)
 
 List Alerts
 
@@ -3272,11 +3599,12 @@ with anchio.ApiClient(configuration) as api_client:
     limit = 50 # int | Page size limit (optional) (default to 50)
     offset = 0 # int | Page offset (optional) (default to 0)
     id = 'id_example' # str |  (optional)
+    metric = 'metric_example' # str |  (optional)
     service = 'service_example' # str |  (optional)
 
     try:
         # List Alerts
-        api_response = api_instance.list_alerts_api_v1_metering_alerts_get(limit=limit, offset=offset, id=id, service=service)
+        api_response = api_instance.list_alerts_api_v1_metering_alerts_get(limit=limit, offset=offset, id=id, metric=metric, service=service)
         print("The response of DefaultApi->list_alerts_api_v1_metering_alerts_get:\n")
         pprint(api_response)
     except Exception as e:
@@ -3293,6 +3621,7 @@ Name | Type | Description  | Notes
  **limit** | **int**| Page size limit | [optional] [default to 50]
  **offset** | **int**| Page offset | [optional] [default to 0]
  **id** | **str**|  | [optional] 
+ **metric** | **str**|  | [optional] 
  **service** | **str**|  | [optional] 
 
 ### Return type
@@ -3541,6 +3870,87 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**LimitOffsetPageCompanyRoleSchema**](LimitOffsetPageCompanyRoleSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_employee_roles_api_v1_corp_employee_roles_get**
+> LimitOffsetPageEmployeeRoleSchema list_employee_roles_api_v1_corp_employee_roles_get(limit=limit, offset=offset)
+
+List Employee Roles
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.limit_offset_page_employee_role_schema import LimitOffsetPageEmployeeRoleSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    limit = 50 # int | Page size limit (optional) (default to 50)
+    offset = 0 # int | Page offset (optional) (default to 0)
+
+    try:
+        # List Employee Roles
+        api_response = api_instance.list_employee_roles_api_v1_corp_employee_roles_get(limit=limit, offset=offset)
+        print("The response of DefaultApi->list_employee_roles_api_v1_corp_employee_roles_get:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->list_employee_roles_api_v1_corp_employee_roles_get: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **int**| Page size limit | [optional] [default to 50]
+ **offset** | **int**| Page offset | [optional] [default to 0]
+
+### Return type
+
+[**LimitOffsetPageEmployeeRoleSchema**](LimitOffsetPageEmployeeRoleSchema.md)
 
 ### Authorization
 
@@ -4136,6 +4546,97 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **list_role_tools_api_v1_corp_employee_roles_role_tools_get**
+> LimitOffsetPageEmployeeRoleToolSchema list_role_tools_api_v1_corp_employee_roles_role_tools_get(limit=limit, offset=offset, id=id, employee_role=employee_role, tool=tool, created_on=created_on, updated_on=updated_on)
+
+List Role Tools
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.limit_offset_page_employee_role_tool_schema import LimitOffsetPageEmployeeRoleToolSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    limit = 50 # int | Page size limit (optional) (default to 50)
+    offset = 0 # int | Page offset (optional) (default to 0)
+    id = 'id_example' # str |  (optional)
+    employee_role = 'employee_role_example' # str |  (optional)
+    tool = 'tool_example' # str |  (optional)
+    created_on = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
+    updated_on = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
+
+    try:
+        # List Role Tools
+        api_response = api_instance.list_role_tools_api_v1_corp_employee_roles_role_tools_get(limit=limit, offset=offset, id=id, employee_role=employee_role, tool=tool, created_on=created_on, updated_on=updated_on)
+        print("The response of DefaultApi->list_role_tools_api_v1_corp_employee_roles_role_tools_get:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->list_role_tools_api_v1_corp_employee_roles_role_tools_get: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **int**| Page size limit | [optional] [default to 50]
+ **offset** | **int**| Page offset | [optional] [default to 0]
+ **id** | **str**|  | [optional] 
+ **employee_role** | **str**|  | [optional] 
+ **tool** | **str**|  | [optional] 
+ **created_on** | **datetime**|  | [optional] 
+ **updated_on** | **datetime**|  | [optional] 
+
+### Return type
+
+[**LimitOffsetPageEmployeeRoleToolSchema**](LimitOffsetPageEmployeeRoleToolSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **list_slack_channels_api_v1_integrations_slack_channels_get**
 > List[SlackChannel] list_slack_channels_api_v1_integrations_slack_channels_get()
 
@@ -4211,7 +4712,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_transactions_api_v1_corp_transactions_get**
-> LimitOffsetPageTransactionSchema list_transactions_api_v1_corp_transactions_get(limit=limit, offset=offset)
+> LimitOffsetPageTransactionSchema list_transactions_api_v1_corp_transactions_get(limit=limit, offset=offset, id=id, transaction_type=transaction_type, amount=amount, created_on=created_on, updated_on=updated_on, account=account, currency=currency, merchant_name=merchant_name, pending=pending, tool=tool)
 
 List Transactions
 
@@ -4249,10 +4750,20 @@ with anchio.ApiClient(configuration) as api_client:
     api_instance = anchio.DefaultApi(api_client)
     limit = 50 # int | Page size limit (optional) (default to 50)
     offset = 0 # int | Page offset (optional) (default to 0)
+    id = 'id_example' # str |  (optional)
+    transaction_type = 'transaction_type_example' # str |  (optional)
+    amount = anchio.Amount() # Amount |  (optional)
+    created_on = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
+    updated_on = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
+    account = 56 # int |  (optional)
+    currency = 'currency_example' # str |  (optional)
+    merchant_name = 'merchant_name_example' # str |  (optional)
+    pending = True # bool |  (optional)
+    tool = 'tool_example' # str |  (optional)
 
     try:
         # List Transactions
-        api_response = api_instance.list_transactions_api_v1_corp_transactions_get(limit=limit, offset=offset)
+        api_response = api_instance.list_transactions_api_v1_corp_transactions_get(limit=limit, offset=offset, id=id, transaction_type=transaction_type, amount=amount, created_on=created_on, updated_on=updated_on, account=account, currency=currency, merchant_name=merchant_name, pending=pending, tool=tool)
         print("The response of DefaultApi->list_transactions_api_v1_corp_transactions_get:\n")
         pprint(api_response)
     except Exception as e:
@@ -4268,6 +4779,16 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int**| Page size limit | [optional] [default to 50]
  **offset** | **int**| Page offset | [optional] [default to 0]
+ **id** | **str**|  | [optional] 
+ **transaction_type** | **str**|  | [optional] 
+ **amount** | [**Amount**](.md)|  | [optional] 
+ **created_on** | **datetime**|  | [optional] 
+ **updated_on** | **datetime**|  | [optional] 
+ **account** | **int**|  | [optional] 
+ **currency** | **str**|  | [optional] 
+ **merchant_name** | **str**|  | [optional] 
+ **pending** | **bool**|  | [optional] 
+ **tool** | **str**|  | [optional] 
 
 ### Return type
 
@@ -4608,6 +5129,78 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **public_post_access_request_api_v1_corp_accesses_public_slug_post**
+> PublicToolAccessSchema public_post_access_request_api_v1_corp_accesses_public_slug_post(slug, tool_access_request_schema)
+
+Public Post Access Request
+
+### Example
+
+
+```python
+import time
+import os
+import anchio
+from anchio.models.public_tool_access_schema import PublicToolAccessSchema
+from anchio.models.tool_access_request_schema import ToolAccessRequestSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    slug = 'slug_example' # str | 
+    tool_access_request_schema = anchio.ToolAccessRequestSchema() # ToolAccessRequestSchema | 
+
+    try:
+        # Public Post Access Request
+        api_response = api_instance.public_post_access_request_api_v1_corp_accesses_public_slug_post(slug, tool_access_request_schema)
+        print("The response of DefaultApi->public_post_access_request_api_v1_corp_accesses_public_slug_post:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->public_post_access_request_api_v1_corp_accesses_public_slug_post: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **slug** | **str**|  | 
+ **tool_access_request_schema** | [**ToolAccessRequestSchema**](ToolAccessRequestSchema.md)|  | 
+
+### Return type
+
+[**PublicToolAccessSchema**](PublicToolAccessSchema.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **refresh_token_api_v1_auth_refresh_token_post**
 > OAuthTokenSchema refresh_token_api_v1_auth_refresh_token_post(refresh_token)
 
@@ -4892,6 +5485,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**MeteredAlertSchema**](MeteredAlertSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_employee_roles_api_v1_corp_employee_roles_id_get**
+> EmployeeRoleSchema retrieve_employee_roles_api_v1_corp_employee_roles_id_get(id)
+
+Retrieve Employee Roles
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_schema import EmployeeRoleSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    id = 'id_example' # str | 
+
+    try:
+        # Retrieve Employee Roles
+        api_response = api_instance.retrieve_employee_roles_api_v1_corp_employee_roles_id_get(id)
+        print("The response of DefaultApi->retrieve_employee_roles_api_v1_corp_employee_roles_id_get:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->retrieve_employee_roles_api_v1_corp_employee_roles_id_get: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
+
+[**EmployeeRoleSchema**](EmployeeRoleSchema.md)
 
 ### Authorization
 
@@ -5424,7 +6096,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_api_key_integration_api_v1_auth_integrations_api_key_key_id_put**
-> APIKeySchema update_api_key_integration_api_v1_auth_integrations_api_key_key_id_put(key_id, api_key_schema)
+> APIKeySchemaOutput update_api_key_integration_api_v1_auth_integrations_api_key_key_id_put(key_id, api_key_schema_input)
 
 Update Api Key Integration
 
@@ -5436,7 +6108,8 @@ Update Api Key Integration
 import time
 import os
 import anchio
-from anchio.models.api_key_schema import APIKeySchema
+from anchio.models.api_key_schema_input import APIKeySchemaInput
+from anchio.models.api_key_schema_output import APIKeySchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -5461,11 +6134,11 @@ with anchio.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = anchio.DefaultApi(api_client)
     key_id = 'key_id_example' # str | 
-    api_key_schema = anchio.APIKeySchema() # APIKeySchema | 
+    api_key_schema_input = anchio.APIKeySchemaInput() # APIKeySchemaInput | 
 
     try:
         # Update Api Key Integration
-        api_response = api_instance.update_api_key_integration_api_v1_auth_integrations_api_key_key_id_put(key_id, api_key_schema)
+        api_response = api_instance.update_api_key_integration_api_v1_auth_integrations_api_key_key_id_put(key_id, api_key_schema_input)
         print("The response of DefaultApi->update_api_key_integration_api_v1_auth_integrations_api_key_key_id_put:\n")
         pprint(api_response)
     except Exception as e:
@@ -5480,11 +6153,11 @@ with anchio.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **key_id** | **str**|  | 
- **api_key_schema** | [**APIKeySchema**](APIKeySchema.md)|  | 
+ **api_key_schema_input** | [**APIKeySchemaInput**](APIKeySchemaInput.md)|  | 
 
 ### Return type
 
-[**APIKeySchema**](APIKeySchema.md)
+[**APIKeySchemaOutput**](APIKeySchemaOutput.md)
 
 ### Authorization
 
@@ -5586,7 +6259,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_company_api_v1_auth_company_update_put**
-> CompanySchema update_company_api_v1_auth_company_update_put(company_schema)
+> CompanySchemaOutput update_company_api_v1_auth_company_update_put(company_schema_input)
 
 Update Company
 
@@ -5598,7 +6271,8 @@ Update Company
 import time
 import os
 import anchio
-from anchio.models.company_schema import CompanySchema
+from anchio.models.company_schema_input import CompanySchemaInput
+from anchio.models.company_schema_output import CompanySchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -5622,11 +6296,11 @@ configuration = anchio.Configuration(
 with anchio.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = anchio.DefaultApi(api_client)
-    company_schema = anchio.CompanySchema() # CompanySchema | 
+    company_schema_input = anchio.CompanySchemaInput() # CompanySchemaInput | 
 
     try:
         # Update Company
-        api_response = api_instance.update_company_api_v1_auth_company_update_put(company_schema)
+        api_response = api_instance.update_company_api_v1_auth_company_update_put(company_schema_input)
         print("The response of DefaultApi->update_company_api_v1_auth_company_update_put:\n")
         pprint(api_response)
     except Exception as e:
@@ -5640,11 +6314,11 @@ with anchio.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_schema** | [**CompanySchema**](CompanySchema.md)|  | 
+ **company_schema_input** | [**CompanySchemaInput**](CompanySchemaInput.md)|  | 
 
 ### Return type
 
-[**CompanySchema**](CompanySchema.md)
+[**CompanySchemaOutput**](CompanySchemaOutput.md)
 
 ### Authorization
 
@@ -5665,7 +6339,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_employee_api_v1_corp_employees_employee_id_put**
-> EmployeeSchema update_employee_api_v1_corp_employees_employee_id_put(employee_id, employee_schema)
+> EmployeeSchemaOutput update_employee_api_v1_corp_employees_employee_id_put(employee_id, employee_schema_input)
 
 Update Employee
 
@@ -5677,7 +6351,8 @@ Update Employee
 import time
 import os
 import anchio
-from anchio.models.employee_schema import EmployeeSchema
+from anchio.models.employee_schema_input import EmployeeSchemaInput
+from anchio.models.employee_schema_output import EmployeeSchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -5702,11 +6377,11 @@ with anchio.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = anchio.DefaultApi(api_client)
     employee_id = 'employee_id_example' # str | 
-    employee_schema = anchio.EmployeeSchema() # EmployeeSchema | 
+    employee_schema_input = anchio.EmployeeSchemaInput() # EmployeeSchemaInput | 
 
     try:
         # Update Employee
-        api_response = api_instance.update_employee_api_v1_corp_employees_employee_id_put(employee_id, employee_schema)
+        api_response = api_instance.update_employee_api_v1_corp_employees_employee_id_put(employee_id, employee_schema_input)
         print("The response of DefaultApi->update_employee_api_v1_corp_employees_employee_id_put:\n")
         pprint(api_response)
     except Exception as e:
@@ -5721,11 +6396,92 @@ with anchio.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **employee_schema** | [**EmployeeSchema**](EmployeeSchema.md)|  | 
+ **employee_schema_input** | [**EmployeeSchemaInput**](EmployeeSchemaInput.md)|  | 
 
 ### Return type
 
-[**EmployeeSchema**](EmployeeSchema.md)
+[**EmployeeSchemaOutput**](EmployeeSchemaOutput.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_employee_roles_api_v1_corp_employee_roles_id_put**
+> EmployeeRoleSchema update_employee_roles_api_v1_corp_employee_roles_id_put(id, employee_role_schema)
+
+Update Employee Roles
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_schema import EmployeeRoleSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    id = 'id_example' # str | 
+    employee_role_schema = anchio.EmployeeRoleSchema() # EmployeeRoleSchema | 
+
+    try:
+        # Update Employee Roles
+        api_response = api_instance.update_employee_roles_api_v1_corp_employee_roles_id_put(id, employee_role_schema)
+        print("The response of DefaultApi->update_employee_roles_api_v1_corp_employee_roles_id_put:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->update_employee_roles_api_v1_corp_employee_roles_id_put: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **employee_role_schema** | [**EmployeeRoleSchema**](EmployeeRoleSchema.md)|  | 
+
+### Return type
+
+[**EmployeeRoleSchema**](EmployeeRoleSchema.md)
 
 ### Authorization
 
@@ -5907,6 +6663,87 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **update_role_tools_api_v1_corp_employee_roles_role_tools_id_put**
+> EmployeeRoleToolSchema update_role_tools_api_v1_corp_employee_roles_role_tools_id_put(id, employee_role_tool_schema)
+
+Update Role Tools
+
+### Example
+
+* Bearer Authentication (BearerToken):
+
+```python
+import time
+import os
+import anchio
+from anchio.models.employee_role_tool_schema import EmployeeRoleToolSchema
+from anchio.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://anchio.app
+# See configuration.py for a list of all supported configuration parameters.
+configuration = anchio.Configuration(
+    host = "https://anchio.app"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: BearerToken
+configuration = anchio.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with anchio.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = anchio.DefaultApi(api_client)
+    id = 'id_example' # str | 
+    employee_role_tool_schema = anchio.EmployeeRoleToolSchema() # EmployeeRoleToolSchema | 
+
+    try:
+        # Update Role Tools
+        api_response = api_instance.update_role_tools_api_v1_corp_employee_roles_role_tools_id_put(id, employee_role_tool_schema)
+        print("The response of DefaultApi->update_role_tools_api_v1_corp_employee_roles_role_tools_id_put:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling DefaultApi->update_role_tools_api_v1_corp_employee_roles_role_tools_id_put: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **employee_role_tool_schema** | [**EmployeeRoleToolSchema**](EmployeeRoleToolSchema.md)|  | 
+
+### Return type
+
+[**EmployeeRoleToolSchema**](EmployeeRoleToolSchema.md)
+
+### Authorization
+
+[BearerToken](../README.md#BearerToken)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **update_user_api_v1_auth_me_update_put**
 > UserSchema update_user_api_v1_auth_me_update_put(user_schema)
 
@@ -6068,7 +6905,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_company_logo_api_v1_auth_company_logo_post**
-> CompanySchema upload_company_logo_api_v1_auth_company_logo_post(file)
+> CompanySchemaOutput upload_company_logo_api_v1_auth_company_logo_post(file)
 
 Upload Company Logo
 
@@ -6082,7 +6919,7 @@ Upload company logo associated with bearer token and license cookie / api key
 import time
 import os
 import anchio
-from anchio.models.company_schema import CompanySchema
+from anchio.models.company_schema_output import CompanySchemaOutput
 from anchio.rest import ApiException
 from pprint import pprint
 
@@ -6128,7 +6965,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanySchema**](CompanySchema.md)
+[**CompanySchemaOutput**](CompanySchemaOutput.md)
 
 ### Authorization
 

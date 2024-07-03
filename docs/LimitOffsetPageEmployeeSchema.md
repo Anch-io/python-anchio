@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**List[EmployeeSchema]**](EmployeeSchema.md) |  | 
+**items** | [**List[EmployeeSchemaOutput]**](EmployeeSchemaOutput.md) |  | 
 **total** | **int** |  | 
 **limit** | **int** |  | 
 **offset** | **int** |  | 

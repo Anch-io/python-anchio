@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **id** | **str** | id | [optional] 
 **name** | **str** | name | 
 **description** | **str** | description | 
-**logo** | **str** | logo | 
+**logo** | **str** |  | [optional] 
 
 ## Example
 

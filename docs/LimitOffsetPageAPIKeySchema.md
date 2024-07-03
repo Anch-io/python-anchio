@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**List[APIKeySchema]**](APIKeySchema.md) |  | 
+**items** | [**List[APIKeySchemaOutput]**](APIKeySchemaOutput.md) |  | 
 **total** | **int** |  | 
 **limit** | **int** |  | 
 **offset** | **int** |  | 

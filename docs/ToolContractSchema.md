@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **user_count** | **int** |  | [optional] 
 **name** | **str** | name | 
 **description** | **str** | description | 
-**logo** | **str** | logo | 
+**logo** | **str** |  | [optional] 
 **category** | [**ToolCategorySchema**](ToolCategorySchema.md) |  | [optional] 
 **country** | **str** |  | 
 **has_subprocessor** | **bool** |  | [optional] [default to False]

@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **email** | **str** |  | 
 **justification** | **str** |  | 
 **tool** | **str** |  | 
-**company** | **str** |  | 
 **title** | **str** |  | 
 **company_name** | **str** |  | 
 
